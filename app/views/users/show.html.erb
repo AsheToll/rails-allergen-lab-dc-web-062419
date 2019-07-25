@@ -1,0 +1,9 @@
+<h1><%= @user.name %></h1>
+
+<% @recipes.each do |recipe| %>
+    <ul>
+        <li><%= recipe.name %></li>
+    </ul>
+<% end %>
+
+<%= link_to "Delete #{@user.name}", recipes_path, "method" => :delete %>
