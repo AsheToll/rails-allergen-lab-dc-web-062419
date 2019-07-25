@@ -1,0 +1,6 @@
+<h1><%=@recipe.name%> by <%=@user.name%></h1>
+
+
+<%@recipe.ingredients.each do |ingredients|%>
+<li><%= ingredients.name%></li>
+<%end%>

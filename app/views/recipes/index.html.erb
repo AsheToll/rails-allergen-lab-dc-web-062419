@@ -1,0 +1,14 @@
+<h1>Recipes</h1>
+
+<!--
+<%= form_for(recipes_path, method: "get") do %>
+<%= label_tag(:q, "search for:")%>
+<%= text_field(:q, :name)%>
+<%=submit_tag("Search")%>
+<%end%>-->
+
+
+
+<%@recipes.each do |recipe|%>
+<li><%=link_to recipe.name, recipe_path(recipe)%></li>
+<%end%>
