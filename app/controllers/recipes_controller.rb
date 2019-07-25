@@ -17,6 +17,10 @@ class RecipesController < ApplicationController
         @recipe.ingredients.build()
     end
 
+    def destroy
+redirect_to recipes_path
+    end
+
     def create
 
         @recipe = Recipe.new(recipe_params)

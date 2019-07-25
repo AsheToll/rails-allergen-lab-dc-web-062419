@@ -6,4 +6,4 @@
     </ul>
 <% end %>
 
-<%= link_to "Delete #{@user.name}", recipes_path, "method" => :delete %>
+<%= link_to "Delete #{@user.name}", user_path(@user), "method" => :delete %>
